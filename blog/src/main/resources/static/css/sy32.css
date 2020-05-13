@@ -1,0 +1,232 @@
+
+/*font-face*/
+@font-face {
+    font-family: myself;
+    src: url("../fon/ONYX.TTF") ;
+}
+@font-face {
+    font-family: BOOMBOX;
+    src: url("../fon/BOOMBOX.TTF");
+}
+@font-face {
+    font-family: FZJZJW;
+    src: url("../fon/FZJZJW.TTF");
+}
+@font-face {
+    font-family: LTCH;
+    src: url("../fon/LTCH.TTF");
+}
+@font-face {
+    font-family: ROCK;
+    src: url("../fon/ROCK.TTF");
+}
+@font-face {
+    font-family: TCCM____;
+    src: url("../fon/TCCM____.TTF");
+}
+
+h2{
+    font-family: BOOMBOX;font-size: 50px;color: rebeccapurple;
+}
+.h2{
+    text-align: center;
+    font-family: FZJZJW;font-size: 70px;color: #d72092;
+}
+
+
+body{
+    /*background-color: #c2c2b8;*/
+  /*background: url(../img/repeat.jpg);*/
+  /*  backface-visibility: revert;*/
+    /*background-color: rgba(255,148,102,0.69);*/
+    opacity: 0.8;
+}
+ul li{
+    list-style: none;
+}
+
+/*动画*/
+.myDIV
+{   font-family: BOOMBOX;
+    font-size: 60px;
+    text-align: center!important;
+    animation:mymove 5s infinite;
+    -webkit-animation:mymove 5s infinite;
+}
+@keyframes mymove
+{
+    from {color: rgba(38, 245, 20, 0.9);}
+    to {color:blue;}
+}
+
+/*avatar*/
+.avatar{
+    /*background-color: #1f360d;*/
+
+    margin-top:150px;
+    border: 2px solid #d53891;
+    border-radius: 50px;
+    width: 600px;
+    transition: transform 1s;
+}.avatar:hover{
+    /*background-color: #1f360d;*/
+
+
+    transform: translateY(20px);
+
+}
+ html{
+
+     background-color: rgba(192,241,255,0.5);
+ }
+
+
+/*word*/
+.word ul{
+    /*float: left;*/
+    /*display: inline;*/
+}
+.word{
+    background-color: rgba(255,231,206,0.69);
+}
+
+/*competition,hobby father*/
+.all {
+    height: 1600px;
+    width: 1400px;
+    border-radius: 50px;
+    /*border: 5px solid rgba(66, 92, 18, 0.12);*/
+    /*transition: background-color;*/
+    /*background-color: #1f360d;*/
+
+    margin: 50px;
+    /*width: 2000px;*/
+    /*height: 2000px;*/
+    display: block;
+    position: relative;
+}
+.all:after{
+    /*background: url("../img/bg.jpg");*/
+    /*opacity: 0.1;*/
+    /*transform: scale(0.1,0);*/
+}
+.all::after {
+    content: "";
+    /*background: url(../img/repeat.jpg);*/
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.competition li a{
+    text-decoration: none;
+}
+
+.competition li{
+    font-family: BOOMBOX;
+    padding:  10px;
+
+    margin-right: 30px;
+    margin-top: 10px;
+    overflow: hidden;
+    display: block;
+    transition: transform 0.7s;
+
+}.competition li:hover{
+     /*transition: transform 0.5s;*/
+     /*transition: opacity;*/
+     /*opacity: 0.5;*/
+
+    /* transition: padding-bottom ;*/
+    /*padding-bottom: 50px;*/
+    /*transition: scale;*/
+    /*scale:2;*/
+
+     transform: translate3d(20px,5px,20px);
+     cursor: pointer;
+
+}
+.competition{
+    position: absolute;
+    /*background-color: #1f360d;*/
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    margin-top: -20px;
+    width: 800px;
+    left: 590px;
+    top: 110px;
+    overflow: hidden;
+}
+.competition h2{
+    font-family: FZJZJW;
+}
+.hobby{
+    position: absolute;
+width: 780px;
+  top: 880px;
+    overflow: hidden;
+}
+
+.all .hobby{
+    margin-left: -30px;
+}
+.hobby h2{
+    color: #b62b2b;
+    font-family:  FZJZJW;
+}
+
+.hobby li{
+    font-family: FZJZJW;font-size: 40px;
+    padding: 10px 0 10px 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    transition: transform 0.7s;
+
+}
+.hobby li:hover{
+    /*transition: transform 0.5s;*/
+    /*transition: opacity;*/
+    /*opacity: 0.5;*/
+
+    /* transition: padding-bottom ;*/
+    /*padding-bottom: 50px;*/
+    /*transition: scale;*/
+    /*scale:2;*/
+
+    transform: translate3d(-20px,5px,0);
+    cursor: pointer;
+
+}
+
+.UnforgettableExperience{
+    position: absolute;
+    left: 750px;
+    top: 850px;
+    width: 600px;
+    overflow: hidden;
+    font-family: FZJZJW;font-size: 40px; padding: 30px;
+    margin: 20px;
+}
+
+.UnforgettableExperience li{
+   margin-top: 20px;
+    padding:10px ;
+    transition: transform 0.7s;
+}
+.UnforgettableExperience li:hover{
+   margin-top: 20px;
+    padding:10px ;
+    transform:  translate3d(20px,5px,20px);
+}
+.UnforgettableExperience h2{
+    font-family:  FZJZJW;
+}
+
+
+
+
+
