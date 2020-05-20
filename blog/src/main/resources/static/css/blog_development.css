@@ -1,0 +1,20 @@
+
+
+.ui.olive.m-shadow-small.segment textarea{
+    margin: 10px 0 5px 3px;
+    font-size: 18px;
+   font-family: "宋体";
+    line-height: 30px;
+    border: 1.5px solid #1276d5;
+
+    border-radius: 3px;
+}
+
+
+.date1{
+    font-size: 200px;
+    font-family: "宋体";
+    line-height: 30px;
+    font-weight: bold;
+
+}

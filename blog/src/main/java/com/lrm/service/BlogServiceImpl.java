@@ -43,6 +43,7 @@ public class BlogServiceImpl implements BlogService {
             throw new NotFoundException("该博客不存在");
         }
         Blog b = new Blog();
+
         BeanUtils.copyProperties(blog,b);
         String content = b.getContent();
         b.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
@@ -67,6 +68,7 @@ public class BlogServiceImpl implements BlogService {
                 if (blog.isRecommend()) {
                     predicates.add(cb.equal(root.<Boolean>get("recommend"), blog.isRecommend()));
                 }
+
                 cq.where(predicates.toArray(new Predicate[predicates.size()]));
                 return null;
             }

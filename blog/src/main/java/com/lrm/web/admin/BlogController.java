@@ -1,12 +1,13 @@
 package com.lrm.web.admin;
 
 import com.lrm.po.Blog;
-import com.lrm.po.Type;
 import com.lrm.po.User;
 import com.lrm.service.BlogService;
 import com.lrm.service.TagService;
 import com.lrm.service.TypeService;
+import com.lrm.util.MarkdownUtils;
 import com.lrm.vo.BlogQuery;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -81,11 +82,19 @@ public class BlogController {
 
 
     @PostMapping("/blogs")
-    public String post(Blog blog, RedirectAttributes attributes, HttpSession session) {
+    public String post(Blog blog, boolean blogview, RedirectAttributes attributes, HttpSession session) {
         blog.setUser((User) session.getAttribute("user"));
         blog.setType(typeService.getType(blog.getType().getId()));
         blog.setTags(tagService.listTag(blog.getTagIds()));
         Blog b;
+        if(blogview == true)
+        {
+            
+            String content = blog.getContent();
+            blog.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+//            MarkdownUtils.markdownToHtmlExtensions(blog.getContent());
+            return "blog";
+        }
         if (blog.getId() == null) {
             b =  blogService.saveBlog(blog);
         } else {
@@ -97,7 +106,7 @@ public class BlogController {
         } else {
             attributes.addFlashAttribute("message", "操作成功");
         }
-        return REDIRECT_LIST;
+        return "redirect:/blog/"+blog.getId();
     }
 
 

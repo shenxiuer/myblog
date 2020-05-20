@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpSession;
+
 /**
  * Created by limi on 2017/10/13.
  */
@@ -49,8 +51,9 @@ public class IndexController {
     }
 
     @GetMapping("/blog/{id}")
-    public String blog(@PathVariable Long id,Model model) {
+    public String blog(@PathVariable Long id,Model model,HttpSession session) {
         model.addAttribute("blog", blogService.getAndConvert(id));
+        model.addAttribute("user",session.getAttribute("user"));
         return "blog";
     }
 
@@ -63,7 +66,12 @@ public class IndexController {
     @GetMapping("/myself")
     public String myself() {
 
-        return  "forward:http://szq.szq666.xyz/sy3/resume.html";
+        return   "redirect:http://szq.szq666.xyz/myself/";
     }
 
+//    @GetMapping("/blossom")
+//    public String blossom() {
+//
+//        return "blossom";
+//    }
 }

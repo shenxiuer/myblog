@@ -22,7 +22,7 @@ public class Blog {
     @Lob
     private String content;
     private String firstPicture;
-    private String flag;
+    private String flag="原创";
     private Integer views;
     private boolean appreciation;
     private boolean shareStatement;
