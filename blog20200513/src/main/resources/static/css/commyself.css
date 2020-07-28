@@ -1,0 +1,145 @@
+
+
+/*UnforgettableExperience*/
+.UnforgettableExperience li:nth-child(2){
+    font-size: 22px;
+    color: #840e0e;
+    border-radius: 10px;
+    border: 3px solid #840e0e;
+    box-shadow: 5px 5px 5px #840e0e;
+}.UnforgettableExperience li:nth-child(3){
+     font-size: 22px;
+     color: #2fc414;
+     border-radius: 10px;
+     border: 3px solid #2fc414;
+     box-shadow: 5px 5px 5px #2fc414;
+ }.UnforgettableExperience li:nth-child(4){
+      font-size: 22px;
+      color: #2522af;
+      border-radius: 10px;
+      border: 3px solid #2522af;
+      box-shadow: 5px 5px 5px #2522af;
+  }.UnforgettableExperience li:nth-child(5){
+       font-size: 22px;
+       color: #840e0e;
+       border-radius: 10px;
+       border: 3px solid #840e0e;
+       box-shadow: 5px 5px 5px #840e0e;
+   }
+.UnforgettableExperience li:nth-child(5){
+    font-size: 22px;
+    color: #dc6313;
+    border-radius: 10px;
+    border: 3px solid  #dc6313;
+    box-shadow: 5px 5px 5px  #dc6313;
+
+}
+.UnforgettableExperience li:nth-child(6){
+    font-size: 22px;
+    color: #c1aa0d;
+    border-radius: 10px;
+    border: 3px solid  #c1aa0d;
+    box-shadow: 5px 5px 5px  #c1aa0d;
+}
+
+
+/*hobby*/
+.hobby li:nth-child(2){
+    font-size: 22px;
+    color: #ff9257;
+    border-radius: 10px;
+    border: 3px solid #ff9257;
+    box-shadow: 5px 5px 5px #ff9257;
+}
+.hobby li:nth-child(3){
+    font-size: 22px;
+    color: #ad1297;
+    border-radius: 10px;
+    border: 3px solid #9e13ad;
+    box-shadow: 5px 5px 5px #ad1297;
+}
+.hobby li:nth-child(4){
+    font-size: 22px;
+    color: #80cb3e;
+    border: 3px solid  #80cb3e;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px#80cb3e;
+}
+.hobby li:nth-child(5){
+    font-size: 22px;
+    color: #1d9ac4;
+    border-radius: 10px;
+    border: 3px solid  #1d9ac4;
+    box-shadow: 5px 5px 5px #1d9ac4;
+}
+.hobby li:nth-child(6){
+    font-size: 22px;
+    color: rgba(57, 62, 163, 0.87);
+    border-radius: 10px;
+    border: 3px solid   rgba(57, 62, 163, 0.87);
+    box-shadow: 5px 5px 5px rgba(57, 62, 163, 0.87);
+}
+.hobby li:nth-child(7){
+    font-size: 22px;
+    color: #4a1289;
+    border-radius: 10px;
+    border: 3px solid   #4a1289;
+    box-shadow: 5px 5px 5px #4a1289;
+}
+.hobby li:nth-child(8){
+    font-size: 22px;
+    color: #840e0e;
+    border-radius: 10px;
+    border: 3px solid #840e0e;
+    box-shadow: 5px 5px 5px #840e0e;
+}
+
+/*competition*/
+.competition li:nth-child(2){
+    font-family: BOOMBOX;
+    font-size: 22px;  border-radius: 10px;
+    color: rgba(35, 22, 215, 0.99);
+    box-shadow: 5px 5px 5px  rgba(35, 22, 215, 0.99);
+    border: 3px solid rgba(35, 22, 215, 0.99);
+}
+.competition li:nth-child(3){
+    font-family: BOOMBOX;
+    font-size: 22px;  border-radius: 10px;
+    color: rgba(43, 168, 59, 0.99);
+    box-shadow: 5px 5px 5px  rgba(43, 168, 59, 0.99);
+    border: 3px solid rgba(43, 168, 59, 0.99);
+}.competition li:nth-child(4){
+     font-family: BOOMBOX;
+     font-size: 22px;  border-radius: 10px;
+     color: rgba(212, 85, 52, 0.99);
+     box-shadow: 5px 5px 5px  rgba(212, 85, 52, 0.99);
+     border: 3px solid  rgba(212, 85, 52, 0.99);
+ }.competition li:nth-child(5){
+      font-family: BOOMBOX;
+      font-size: 22px;  border-radius: 10px;
+      color: rgba(129, 14, 194, 0.99);
+      box-shadow: 5px 5px 5px rgba(129, 14, 194, 0.99);
+      border: 3px solid rgba(129, 14, 194, 0.99);
+  }.competition li:nth-child(6){
+       font-family: BOOMBOX;
+       font-size: 22px;  border-radius: 10px;
+       color: rgba(41, 160, 122, 0.76);
+       box-shadow: 5px 5px 5px  rgba(41, 160, 122, 0.76);
+       border: 3px solid rgba(41, 160, 122, 0.76);
+   }
+.competition li:nth-child(n+7):nth-child(-n+8){
+    font-family: BOOMBOX;
+    font-size: 22px;
+    border-radius: 10px;
+    color: rgba(118, 105, 13, 0.58);
+    box-shadow: 5px 5px 5px  rgba(118, 105, 13, 0.58);
+    border: 3px solid rgba(118, 105, 13, 0.58);
+;
+}
+.competition li:nth-child(n+9){
+    font-family: BOOMBOX;  border-radius: 10px;
+    font-size: 22px;
+    color: rgba(7, 99, 101, 0.76);
+    box-shadow: 5px 5px 5px rgba(7, 99, 101, 0.76);
+    border: 3px solid rgba(7, 99, 101, 0.76);
+}
